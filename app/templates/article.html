@@ -9,16 +9,39 @@
 
 </head>
 <body>
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-        <div class="header" style="margin-top: 100px">
-            <h1>这是标题</h1>
-            <p style="margin-top: 30px">作者：wfhnjl</p>
-            <p style="text-align: right"> 发布时间：2019-5-1</p><hr>
-
+<div class="col-sm-1"></div>
+<div class="col-sm-10">
+    <div class="header" style="margin-top: 100px; margin-bottom: 100px">
+        <div id="articleheader">
+            <h1 style="font-size: 300%;">万人马拉松比赛-即将开幕</h1>
+            <p style="margin-top: 30px;font-size: 300%;">作者：wfhnjl</p>
+            <p style="text-align: right;font-size: 150%;"> 发布时间：2019-5-1</p>
+            <hr>
         </div>
-    </div>
+        <div id="articlebody" style="font-size: 200%">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万佛湖位于安徽省六安市舒城县万佛湖镇境内，是淠史杭灌区的重要组成部分，总面积299平方千米，湖面
+                50平方千米，湖岸周边205千米，库容9.03亿立方米。地理坐标：东经116°78′，北纬31°30′。万佛湖集山、水、泉、石、崖、池、洞、
+                林、花及水利设施，文化遗址于一体。境内有地文景观类6种，水域风光类4种，生物景观类4种，古迹与建筑类25种，休闲知健身类9种，
+                购物类3种。2007年，万佛湖荣获全国环境优美镇和全省最佳旅游乡镇光荣称号；2010年，被确定为安徽省世博会重点推介的旅游景点之
+                一；2012年，万佛湖获全省十佳旅游景区称号；2016年，万佛湖成功晋升国家5A级景区。</p>
+            <img src={{ url_for('static',filename='images/a1.jpg') }} alt="">
+            <div>
+                <h1>发展沿革</h1>
+                <ul>
+                    <li>1958年11月，龙河口水库开工，初期以舒城县政府办公室建设为主。</li>
+                    <li>1961年4月，龙河口水库停建。</li>
+                    <li>1965年10月，龙河口水库复工续建，列入基建工程。</li>
+                    <li>1969年10月，龙河口水库竣工。</li>
+                    <li>1978年4月26日，在安徽省第一次旅游工作会议上，确定合肥---龙河口（万佛湖）为旅游专线。</li>
+                    <li>1994年春，舒城人民政府签订“联合开发龙河口水库旅游资源的协议”，遂以“万佛湖的名义在《安徽日报》、《合肥晚报》、《旅游导报》等报刊上开展对外宣传。</li>
+                    <li>1995年，舒城县县委、县政府组成“万佛风光旅游度假区总体规划领导小组。</li>
+                    <li>1997年，舒城县成立了“万佛湖风景区管理处”，对风景区进行规划、建设、管理和促销。</li>
+                </ul>
+            </div>
+        </div>
 
+    </div>
+</div>
 
 
 <script src={{ url_for('static', filename='js/bootstrap.js') }}></script>
