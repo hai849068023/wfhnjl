@@ -7,8 +7,8 @@ import time
 
 
 class Accesstoken(db.Model):
-    __tablename__ = 'wfhrj_accesstoekn'
+    __tablename__ = 'wfhrj_wxtoken'
     id = db.Column(db.Integer, primary_key=True)
-    access_token = db.Column(db.String(512), unique=True, nullable=False)
+    access_token = db.Column(db.String(200))
     add_time = db.Column(db.Integer, default=int(time.time()))
 
