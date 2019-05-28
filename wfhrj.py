@@ -1,7 +1,7 @@
 from app import app, db
 from flask_script import Manager, Server
 from flask_migrate import Migrate, MigrateCommand
-from app.models import product_models, user_models, wxapi_models
+from app.models import product_models, wxapi_models, admin_models
 
 manager = Manager(app)
 migrate = Migrate(app, db)
