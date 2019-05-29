@@ -1,0 +1,84 @@
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Bootstrap 实例 - 简单的轮播（Carousel）插件</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<style>
+	.hdimg{
+		width: 100%;
+		height: 375px;
+	}
+	.classmate{
+		margin-top:40px;
+		margin-bottom: 40px;
+		height: auto
+	}
+	.line{
+    margin-top: 100px;
+    width: 100%;
+    border-bottom: 20px solid #D0D0D0;
+    }
+	</style>
+</head>
+<body>
+<div id="myCarousel" class="carousel slide hdimg">
+	<!-- 轮播（Carousel）指标 -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>   
+	<!-- 轮播（Carousel）项目 -->
+	<dl class="carousel-inner">
+		<dt class="item active">
+			<img style="width:100%;height:375px" src="img/wfh/hd_1.png" alt="First slide">
+		</dt>
+		<dt class="item">
+			<img style="width:100%;height:375px" src="img/wfh/hd_2.png" alt="Second slide">
+		</dt>
+		<dt class="item">
+			<img style="width:100%;height:375px" src="img/wfh/hd_3.png" alt="Third slide">
+		</dt>
+	</dl>
+</div>
+<div class="classmate">
+	<dl>
+		<dt id="" class="col-xs-3" style="margin-bottom: 20px">
+			<img alt="140x140" src="img/demo/av4.jpg" class="img-rounded" style="margin-left:65px" />
+ 		 	<p style="font-size:35px; text-align:center">茶叶直销</p>
+		</dt>
+		<dt id="" class="col-xs-3" style="margin-bottom: 20px">
+			<img alt="140x140" src="img/demo/av4.jpg" class="img-rounded" style="margin-left:65px; text-align:center" />
+ 		 	<p style="font-size:35px; text-align:center">水产家禽</p>
+		</dt>
+		<dt id="" class="col-xs-3" style="margin-bottom: 20px">
+			<img alt="140x140" src="img/demo/av4.jpg" class="img-rounded" style="margin-left:65px; text-align:center" />
+ 		 	<p style="font-size:35px; text-align:center">农副产品</p>
+		</dt>
+		<dt id="" class="col-xs-3" style="margin-bottom: 20px">
+			<img alt="140x140" src="img/demo/av4.jpg" class="img-rounded" style="margin-left:65px; text-align:center" />
+ 		 	<p style="font-size:35px; text-align:center">腌制干货</p>
+		</dt>
+		<dt id="" class="col-xs-3" style="margin-bottom: 20px">
+			<img alt="140x140" src="img/demo/av4.jpg" class="img-rounded" style="margin-left:65px" />
+ 		 	<p style="font-size:35px; text-align:center">茶叶直销</p>
+		</dt>
+		<dt id="" class="col-xs-3" style="margin-bottom: 20px">
+			<img alt="140x140" src="img/demo/av4.jpg" class="img-rounded" style="margin-left:65px; text-align:center" />
+ 		 	<p style="font-size:35px; text-align:center">水产家禽</p>
+		</dt>
+		<dt id="" class="col-xs-3" style="margin-bottom: 20px">
+			<img alt="140x140" src="img/demo/av4.jpg" class="img-rounded" style="margin-left:65px; text-align:center" />
+ 		 	<p style="font-size:35px; text-align:center">农副产品</p>
+		</dt>
+		<dt id="" class="col-xs-3" style="margin-bottom: 20px">
+			<img alt="140x140" src="img/demo/av4.jpg" class="img-rounded" style="margin-left:65px; text-align:center" />
+ 		 	<p style="font-size:35px; text-align:center">腌制干货</p>
+		</dt>
+	</dl>
+	<div class="line"></div>
+</div>
+</body>
+</html>
