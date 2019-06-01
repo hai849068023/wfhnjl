@@ -9,7 +9,7 @@ from . import admin
 
 @admin.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('admin/index.html')
+    return render_template('admin/admin_index.html')
 
 
 @admin.route('/login', methods=['GET', 'POST'])

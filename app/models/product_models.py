@@ -9,9 +9,8 @@ from datetime import datetime
 class Classification(db.Model):
     __tablename__ = 'whfrj_classification'
     id = db.Column(db.Integer, primary_key=True)
-    cid = db.Column(db.Integer, autoincrement=True)
+    img = db.Column(db.String(200))
     name = db.Column(db.String(15), nullable=False) #名称
-    introduction = db.Column(db.String(50)) #介绍
     add_time = db.Column(db.DateTime, default=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     products = db.relationship('Products', backref='classification')
 
@@ -32,7 +31,7 @@ class Products(db.Model):
     line_price = db.Column(db.Float, nullable=True) #划线价
     introduction = db.Column(db.String(50))  # 介绍
     add_time = db.Column(db.DateTime, default=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-    cid = db.Column(db.Integer, db.ForeignKey('whfrj_classification.cid'))
+    cid = db.Column(db.Integer, db.ForeignKey('whfrj_classification.id'))
 
 
 # 订单表

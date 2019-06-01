@@ -4,13 +4,13 @@
 <title>Matrix Admin</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
-<link rel="stylesheet" href="css/uniform.css" />
-<link rel="stylesheet" href="css/select2.css" />
-<link rel="stylesheet" href="css/matrix-style.css" />
-<link rel="stylesheet" href="css/matrix-media.css" />
-<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}" />
+<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap-responsive.min.css') }}" />
+<link rel="stylesheet" href="{{url_for('static',filename='css/uniform.css') }}" />
+<link rel="stylesheet" href="{{url_for('static',filename='css/select2.css') }}" />
+<link rel="stylesheet" href="{{url_for('static',filename='css/matrix-style.css') }}" />
+<link rel="stylesheet" href="{{url_for('static',filename='css/matrix-media.css') }}" />
+<link href="{{url_for('static',filename='font-awesome/css/font-awesome.css') }}" rel="stylesheet" />
 <link href='http://fonts.useso.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -60,9 +60,9 @@
 
 <div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>用户列表</a>
   <ul>
-    <li><a href="index.html"><i class="icon icon-home"></i> <span>后台首页</span></a> </li>
-    <li class="active"><a href="admin_products.html"><i class="icon icon-signal"></i> <span>商品管理</span></a> </li>
-    <li><a href="admin_customs.html"><i class="icon icon-th"></i> <span>用户列表</span></a></li>
+    <li><a href="{{url_for('admin.index')}}"><i class="icon icon-home"></i> <span>后台首页</span></a> </li>
+    <li class="active"><a href="{{url_for('admin.products')}}"><i class="icon icon-signal"></i> <span>商品管理</span></a> </li>
+    <li><a href="{{url_for('admin.customs')}}"><i class="icon icon-th"></i> <span>用户列表</span></a></li>
     <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>咨询文章</span> <span class="label label-important">3</span></a>
       <ul>
         <li><a href="form-common.html">文章管理</a></li>
@@ -300,13 +300,13 @@
   <div id="footer" class="span12"> 2013 &copy; Matrix Admin. Brought to you by <a href="http://themedesigner.in/">Themedesigner.in</a> </div>
 </div>
 <!--end-Footer-part-->
-<script src="js/jquery.min.js"></script> 
-<script src="js/jquery.ui.custom.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.uniform.js"></script> 
-<script src="js/select2.min.js"></script> 
-<script src="js/jquery.dataTables.min.js"></script> 
-<script src="js/matrix.js"></script> 
-<script src="js/matrix.tables.js"></script>
+<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script> 
+<script src="{{ url_for('static',filename='js/jquery.ui.custom.js') }}"></script> 
+<script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script> 
+<script src="{{ url_for('static',filename='js/jquery.uniform.js') }}"></script> 
+<script src="{{ url_for('static',filename='js/select2.min.js') }}"></script> 
+<script src="{{ url_for('static',filename='js/jquery.dataTables.min.js') }}"></script> 
+<script src="{{ url_for('static',filename='js/matrix.js') }}"></script> 
+<script src="{{ url_for('static',filename='js/matrix.tables.js') }}"></script>
 </body>
 </html>

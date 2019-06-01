@@ -6,11 +6,11 @@ from . import home
 from app.models.product_models import Classification,Products,Orders
 
 
-@home.route('/', methods=['GET', 'POST'])
-def index():
-    method = request.method
-    if method == 'GET':
+@home.route('/')
+@home.route('/<int:page>')
+def index(page=1):
+        # 分类数据提取
         classification = Classification.query.all()
-        return render_template('wap/index.html')
-    else:
-        pass
+        # 商品数据提取
+        goods = Products.query.paginate(page, per_page=page*10)
+        return render_template('wap/wap_home.html', classification=classification, goods=goods)
