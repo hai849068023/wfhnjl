@@ -10,14 +10,16 @@
 	background-color: #F3F3F3;
 }
 .goods_list{
-	height: 75px;
+	width: 100%;
 	margin-top: 10px;
+	display: inline-block;
 }
 .good_img{
 	width:30%;
 	height: 0;
 	padding-bottom: 20%;
 	margin-left: 3%;
+	display: inline-block;
 	overflow:hidden;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -48,6 +50,7 @@
 	-webkit-box-orient: vertical;
 }
 .good_content .price{
+	display: inline-block;
 	font-size: 12px;
 	font-family: PingFangSC-Regular,sans-serif;
 	color: red;
