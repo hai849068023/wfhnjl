@@ -30,7 +30,7 @@
 .good_content .title{
 	font-family: PingFangSC-Regular,sans-serif;
 	width: 100%;
-	font-size: 15px;
+	font-size: 4vw;
 	color: #3C3C3C;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -41,7 +41,7 @@
 	font-family: PingFangSC-Regular,sans-serif;
 	color: #6C6C6C;
 	width: 100%;
-	font-size: 10px;
+	font-size: 2vw;
 	margin: 0;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -51,7 +51,16 @@
 }
 .good_content .price{
 	display: inline-block;
-	font-size: 12px;
+	font-size: 3vw;
 	font-family: PingFangSC-Regular,sans-serif;
 	color: red;
+	position: relative;
+}
+.nav-tabs {
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.navigation{
+	font-size: 2vw;
 }
