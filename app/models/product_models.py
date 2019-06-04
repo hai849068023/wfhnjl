@@ -21,10 +21,11 @@ class Products(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     pid = db.Column(db.Integer, autoincrement=False)
     name = db.Column(db.String(15), nullable=False) #名称
-    banner = db.Column(db.String(200)) #banner
     image_1 = db.Column(db.String(200)) #图片
     image_2 = db.Column(db.String(200)) #图片
     image_3 = db.Column(db.String(200)) #图片
+    image_4 = db.Column(db.String(200)) #图片
+    image_5 = db.Column(db.String(200)) #图片
     vedio = db.Column(db.String(200)) #视频
     price = db.Column(db.Float, nullable=False) #价格
     specifications = db.Column(db.String(10)) #商品规格

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/wap-home.css')}}">
+</head>
+<body>
+	<div class="goods_list">
+		<div class="col-xs-4 img-rounded good_img" style="background-image:url({{url_for('static',filename='img/wfh/fish1.jpg')}})"></div>
+		<div class="col-xs-8 good_content">
+			<div class="title"><strong>万佛湖胖头鱼</strong></div>
+			<div class="content">当天捕捞，新鲜送达，吃的就是这口新鲜味道，万佛湖野生味道。</div>
+			<div class="price">￥152</div>
+		</div>
+	</div>
+	<div class="goods_list">
+		<div class="col-xs-4 img-rounded good_img" style="background-image:url({{url_for('static',filename='img/wfh/fish2.jpg')}})"></div>
+		<div class="col-xs-8 good_content">
+			<div class="title"><strong>万佛湖鲫鱼</strong></div>
+			<div class="content">当天捕捞，新鲜送达，吃的就是这口新鲜味道，万佛湖野生味道。</div>
+			<div class="price">￥152</div>
+		</div>
+	</div>
+	<!--<div style="text-align: center;margin-top: 6vh">-->
+		<!--<img src="{{url_for('static',filename='img/wfh/no.png')}}" alt="" style="width: 8vw">-->
+		<!--<a href="{{url_for('home.index')}}" style="color:#fb7a2c; font-size: 4vw; margin-left: 2vw;">暂时没有鲜货，点我看看别的吧</a>-->
+	<!--</div>-->
+</body>
+</html>
